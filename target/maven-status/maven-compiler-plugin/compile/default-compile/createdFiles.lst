@@ -1,0 +1,8 @@
+su\practice\figure\FigureInsert.class
+su\practice\figure\FigureSelect.class
+su\practice\util\MyBatisUtil.class
+su\practice\figure\FigureDelete.class
+su\practice\figure\FigureUpdate.class
+su\practice\figure\Figure.class
+su\practice\figure\FigureDAO.class
+su\practice\figure\FigureMapper.class

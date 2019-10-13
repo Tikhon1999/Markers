@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.css" type="text/css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.js"></script>-->
+    <!--<script type="text/javascript" src="/Index.js"></script>-->
+    <!--<script type="text/javascript" src="/Modify.js"></script>-->
+    <!--<script type="text/javascript" src="/getPoints.js"></script>-->
+    <!--<script type="text/javascript" src="/setPoint.js"></script>-->
+    <!--<script type="text/javascript" src="/DeleteFeature.js"></script>-->
+    <!--<script type="text/javascript" src="/AddFeatures.js"></script>-->
+    <!--<script type="text/javascript" src="/AddCoordinates.js"></script>-->
+    <!--<script type="text/javascript" src="/addRequiredInteraction.js"></script>-->
+    <!--<script type="text/javascript" src="/main.js"></script>-->
+    <style>
+        .radio{
+            margin: 10px;
+        }
+        .map {
+            height: 615px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map" class="map"></div>
+    <form class="form-inline">
+        <label>Geometry type &nbsp;</label>
+        <select id="type">
+            <option value="Point">Point</option>
+            <option value="LineString">LineString</option>
+            <option value="Polygon">Polygon</option>
+            <option value="Delete">Delete</option>
+            <option value="Update">Update</option>
+            <option value="None">None</option>
+        </select>
+    </form>
+    <div class="radio">
+        <button onclick="addGoogle()">Google Map</button>
+        <button onclick="addOSM()">OSM</button>
+    </div>
+    <script type="text/javascript" src="script5ol.js"></script>
+
+
+</body>
+</html>
